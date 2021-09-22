@@ -52,18 +52,48 @@ Asociacijo označimo s **črto**, ki povezuje razreda. Če je **enosmerna**, upo
 
 Poseben primer asociacije je agregacija, kjer več objektov nekega razreda pripada enemu objektu drugega razreda. Simbol za tako asociacijo je sicer drugačen, a mi se bomo držali istega zaradi preprostosti.
 
-### Dedovanje
+#### Agregacija
+
+je **specifičen primer asociacije**, kjer objekt enega razreda lahko lasti objekte drugega razreda (_običajno to pomeni števnost 1 : 1..*_).  
+Primer: _objekt razreda Naročilo agregira objekte razreda Izdelek_
+
+Agregacijo označimo s **črto** in **praznim karo/diamantom** na strani razreda, ki agregira.
+
+Iz primera vidimo tudi zanimivo lastnost agregacije - _objekt razreda Motor lahko tekom življenskega cikla pripada različnim objektom razreda Avto_.
+
+![Primer agregacije](resources/class_aggregation.svg)
+
+#### Kompozicija
+
+je **specifičen primer asociacije**, kjer objekti ki so člani kompozicije ne morejo smiselno obstajati brez starša. Običajni si jo lahko predstavljamo kot razmerje med izdelkom in posameznimi deli - tj. izdelek je kompozicija delov.  
+Primer: _razred Človek je kompozicija razredov Roka, Glava, ...; če uničimo objekt razreda Človek, se uničijo tudi objekti, ki so člani kompozicije_
+
+Kompozicijo označimo s **črto** in **polnim karo/diamantom** na strani razreda, ki je kompozicija drugih.
+
+Spet vidimo isto lastnost kot pri agregaciji - _objekt razreda Datoteka lahko tekom življenskega cikla pripada različnim objektom razreda Direktorij_.
+
+![Primer kompozicije](resources/class_composition.svg)
+
+### Dedovanje / Generalizacija
 
 Dedovanje ima v razrednem diagramu enak pomen kot v OOP.
 
-Razmerje z dedovanjem oznažimo s črto in prazno puščico, ki kaže od podrazreda do super/base razreda.
+Razmerje z dedovanjem oznažimo s **črto** in **prazno puščico**, ki kaže od podrazreda do super/base razreda.
 
 ![Primer dedovanja](resources/class_inheritance.svg)
+
+### Realizacija
+
+Realizacija ima enak pomen kot dedovanje, le da se uporablja med vmesnikom (stereotip: `<<interface>>`) in njegovo implementacijo. V Javi se to razmerje označi s ključno besedo `implements`.
+
+Realizacijo označimo s **črtkano črto** in **prazno puščico**, ki kaže proti vmesniku.
+
+![Primer realizacije](resources/class_realization.svg)
 
 ### Števnost
 
 Nekatere povezave razredov kot **asociacija** včasih vključujejo števnost.
-Naprimer: _enemu Letalu lahko pripada več Letov -> števnost letala je torej **ena**, števnost leta pa **nič ali več**_
+Naprimer: _Letalu lahko pripada več Letov -> števnost Leta je torej **nič ali več**_ (enosmerna asociacija)
 
 |     Oznaka     | Števnost                |
 | :------------: | ----------------------- |
