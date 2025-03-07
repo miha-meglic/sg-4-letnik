@@ -51,11 +51,10 @@ Primeri v standardu [poglavje 11.4.5](https://www.omg.org/spec/UML/2.5/PDF#%5B%7
 
 Diagrami obnašanj predstavljajo dinamični del sistema. Opisujejo funkcionalnost sistema.
 
-Glavne podkategorije strukturnih diagramov ste diagram aktivnosti, diagram primerov uporabe in diagram stanj.  
+Glavne podkategorije strukturnih diagramov so diagram aktivnosti, diagram primerov uporabe in diagram stanj.  
 Specifično o diagramu primerov uporabe bomo govorili še več v prihodnjih poglavjih.
 
 Poleg tega pa diagrami obnašanj vključujejo še eno skupino diagramov, diagrame interakcij, ki predstavljajo tok kontrolnih sporočil in podatkov med komponentami ali objekti sistema.  
-Tu si bomo na hitro ogledali diagram zaporedja.
 
 ### Diagram aktivnosti (_ang. activity diagram_)
 
