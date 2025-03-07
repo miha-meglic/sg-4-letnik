@@ -59,7 +59,7 @@ Tu si bomo na hitro ogledali diagram zaporedja.
 
 ### Diagram aktivnosti (_ang. activity diagram_)
 
-je grafična reprezenzacija procesa, ki po korakih prikaže aktivnosti ina akcije v procesu in odločitve, ki vplivajo na potek procesa. Običajno prikazujejo samo tok nadzornih signalov.
+je grafična reprezenzacija procesa, ki po korakih prikaže aktivnosti v procesu in odločitve, ki vplivajo na potek procesa. Običajno prikazujejo samo tok nadzornih signalov.
 
 Zelo pogosto se taki diagrami pojavljajo tudi v dokumentaciji poslovnih procesov, delovnih operacij, ipd.
 
